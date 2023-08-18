@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* ----------------------------- */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    background-color: black;
+}
+
+header img {
+    height: 20rem;
+    width: 30rem;
+    border-radius: 20px;
+}
+/* redBorder js */
+.imagePortrait {
+    border: 0 solid transparent;
+    transition: border .9s;
+}
+/* ----------------------------- */
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+}
+.card-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-img-top {
+    transition: background-color 500ms ease-out;
+}
+.card-img-top:hover {
+    background-color: grey;
+}
+#quantity-sticker1 {
+    text-align: center;
+}
+#quantity-sticker2 {
+    text-align: center;
+}
+#quantity-sticker3 {
+    text-align: center;
+}
+button {
+    background-color: black;
+    color: white;
+}
+p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* ----------------------------- */
+
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-content: center;
+}
+h3 {
+    text-align: center;
+    padding-top: 1rem;
+}

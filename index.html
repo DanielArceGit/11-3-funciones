@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-condiciones</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <img class="imagePortrait" src="./assets/img/image1.jpeg" alt="Caricaturas de los personajes del videojuego Heroes of the Storm, cortesía de Carbot">
+    </header>
+
+    <main>
+        <h1>Stickers</h1>
+        <div class="card-section ps-5 pe-5 ms-5 me-5">
+            <div class="card-group">
+                <div class="card">
+                  <img src="./assets/img/sticker1.png" class="card-img-top" alt="caricatura de zergling color morado mirando tiernamente">
+                  <div class="card-body">
+                    <h5 class="card-title">Zergling</h5>
+                  </div>
+                  <div class="mb-3 ms-5 me-5">
+                    <input id="quantity-sticker1" type="number" class="form-control quantity" placeholder="Cantidad" />
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./assets/img/sticker2.png" class="card-img-top" alt="caricatura de Diablo rojo con los brazos extendidos de forma amenazante">
+                  <div class="card-body">
+                    <h5 class="card-title">Diablo</h5>
+                  </div>
+                  <div class="mb-3 ms-5 me-5">
+                    <input id="quantity-sticker2" type="number" class="form-control quantity" placeholder="Cantidad" />
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./assets/img/sticker3.png" class="card-img-top" alt="caricatura del rey lich de frente clavando su espada en el suelo">
+                  <div class="card-body">
+                    <h5 class="card-title">The Lich King</h5>
+                  </div>
+                  <div class="mb-3 ms-5 me-5">
+                    <input id="quantity-sticker3" type="number" class="form-control quantity" placeholder="Cantidad" />
+                  </div>
+                </div>
+            </div>
+            <button onclick="calculateTotal ()" type="button" class="btn btn-primary mt-3 ms-5 me-5">Verificar</button>
+            <p>llevas <span class="amountResult">0</span> stickers</p>
+        </div>
+    </main>    
+
+    <footer>
+        <h3>Ingresa el password</h3>
+        <select id="password1" class="form-select mt-1 mb-3 ms-3 me-3" aria-label="Default select example">
+            <option selected>Selecciona el primer número</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <select id="password2" class="form-select mt-1 mb-3 ms-3 me-3" aria-label="Default select example">
+            <option selected>Selecciona el segundo número</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <select id="password3" class="form-select mt-1 mb-3 ms-3 me-3" aria-label="Default select example">
+            <option selected>Selecciona el tercer número</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <button onclick="password()" type="button" class="btn btn-primary mt-3 mb-3 ms-5 me-3">Ingresar</button>
+          <p class="passwordResult"></p>
+    </footer>
+
+    <!-- Boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
